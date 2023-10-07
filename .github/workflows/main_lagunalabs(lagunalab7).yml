@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'lagunalabs'
           slot-name: 'Lagunalab7'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C49E30BBA1E441E38520596F94F6C09A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9080A860C6DD401EA25091CADBA7C2E1 }}
           package: .
