@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact.html</title>
+</head>
+<body>
+    <h1 id="Contact">Click on your preferred method of contact:</h1>
+    <h2 id="form">Form of contact:</h2>
+    <form id="Myform" action="./save_contact.php" method="GET">
+        <input type="radio" id="EmailButton" name="contact" value="email" checked> Email <br>
+        <input type="radio" id="Phonebutton" name="contact" value="phone"> Phone <br>
+        <input type="radio" id="Faxbutton" name="contact" value="fax"> Fax <br>
+        <input type="text" id="Textinput" name="contactInfo" id="contactInfo" size="15" maxlength="30" required="required">
+        <input type="submit" id="SubmitButton" value="Submit">
+        <button id="reset" type="reset" value="Reset">Reset</button>
+
+        <link rel="stylesheet" href="mystyle.css">
+    </form>
+</body>
+</html>

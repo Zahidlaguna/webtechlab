@@ -1,0 +1,85 @@
+body {
+    color: royalblue;
+    background-color: lightblue;
+  }
+  
+  #NameID, #FallInformation, #Idealjob, #Hobbies, #mepage, #contact, #Contact, #form, #MyPage, #favoritewebsites{
+    color: red;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.Job, .whatmyhobbiesare, .School, .MePage, .Contactme {
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+    background-color: limegreen;
+    font-size: 20px;
+    text-align: center;
+    padding: auto;
+    margin-bottom: auto;
+}
+
+#ZahidLaguna {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    border-color: brown;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 0cap;
+    align-items: center;
+}
+
+#Classes {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#Myform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#Myhobbies, #TopThree{
+    color: turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#Myhobbies, #TopThree::before {
+    content: "\2605";
+    color: solid gold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+a:active {
+    color: lightpink;
+    text-decoration: underline;
+}
