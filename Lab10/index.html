@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save Data Form</title>
+</head>
+<body>
+    <form action = "savedata.php" method = "post">
+        First Name: <input type="text" name="first_name"><br>
+        Last Name: <input type="text" name="last_name"><br>
+        <input type="submit" value="Save Data">
+    </form>
+    <h2>Saved Data</h2>
+    <?php include("readdata.php"); ?>
+    
+</body>
