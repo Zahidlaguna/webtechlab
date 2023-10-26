@@ -1,5 +1,5 @@
 <?php
-$filepath = "names.txt";
+$filepath = "/home/zahid/webtechsavedata/data.txt";
 
 $filecontent = file($filepath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 

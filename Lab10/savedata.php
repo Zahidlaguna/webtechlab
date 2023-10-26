@@ -1,18 +1,25 @@
 <?php
+// save_data.php
 
-if($_SERVER["REQUEST METHOD"] == "POST") {
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["first_name"];
+    $lastName = $_POST["last_name"];
 
-    $filepath = $_POST["filepath"];
+    // File path in a non-public folder
+    $filePath = "/home/zahid/webtechsavedata/data.txt";
 
-    $file = fopen($filepath, "a");
-    fwrite($file,"$firstname $lastname\n" . PHP_EOL);
+    // Open the file in append mode
+    $file = fopen($filePath, "a");
 
+    // Write the data to the file
+    fwrite($file, $firstName . " " . $lastName . PHP_EOL);
+
+    // Close the file
     fclose($file);
 
-    header("location: index.html");
+    // Redirect back to the form page
+    header("Location: index.html");
     exit();
-
 }
 ?>
+
