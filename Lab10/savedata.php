@@ -11,14 +11,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $file = fopen($filePath, "a");
 
-  
-    fwrite($file, $firstName . " " . $lastName . PHP_EOL);
+    if ($file) {
+        
+        fwrite($file, $data);
 
+        
+        fclose($file);
 
-    fclose($file);
-
-    header("Location: index.html");
-    exit();
+        echo 'Data saved successfully.';
+        include('show_contents.php');
+    } else {
+        echo 'Failed to open the file for writing.';
+    }
+} else {
+    echo 'Invalid request.';
 }
 ?>
 
