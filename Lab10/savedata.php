@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = $firstName . ' ' . $lastName . "\n";
 
     // Specify the path to the non-public folder where the data will be stored
-    $filePath = '../data/data.txt';
+    $filePath = 'lab10/data/data.txt';
 
     // Open the file for appending
     $file = fopen($filePath, 'a');
