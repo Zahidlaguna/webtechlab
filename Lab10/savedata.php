@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lastName = $_POST["last_name"];
 
    
-    $filePath = "/home/zahid/webtechsavedata/data.txt";
+    $filePath = "Lab10/data/data.txt";
 
 
     $file = fopen($filePath, "a");
