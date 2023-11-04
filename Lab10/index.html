@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Save Data Form</title>
+    <title>Save Data</title>
 </head>
 <body>
-    <form action = "savedata.php" method = "post">
-        First Name: <input type="text" name="first_name"><br>
-        Last Name: <input type="text" name="last_name"><br>
+    <form action="save_data.php" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" required><br>
+
         <input type="submit" value="Save Data">
     </form>
-    <h2>Saved Data</h2>
-    <?php include("readdata.php"); ?>
-    
 </body>
+</html>
