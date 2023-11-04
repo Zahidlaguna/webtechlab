@@ -1,8 +1,11 @@
 <?php
-$filepath = "Lab10/data/data.txt";
+// Specify the path to the data file
+$filePath = 'Lab10/data/data.txt';
 
-$filecontent = file($filepath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+// Read the data from the file into an array
+$dataArray = file($filePath, FILE_IGNORE_NEW_LINES);
 
+// Create an HTML table to display the data
 echo '<table>';
 foreach ($dataArray as $data) {
     echo '<tr><td>' . $data . '</td></tr>';

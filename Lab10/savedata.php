@@ -1,21 +1,23 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get the first and last names from the form
+    $firstName = $_POST['first_name'];
+    $lastName = $_POST['last_name'];
 
+    // Create a data string to write to the file
+    $data = $firstName . ' ' . $lastName . "\n";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST["first_name"];
-    $lastName = $_POST["last_name"];
+    // Specify the path to the non-public folder where the data will be stored
+    $filePath = '../data/data.txt';
 
-   
-    $filePath = "Lab10/data/data.txt";
-
-
-    $file = fopen($filePath, "a");
+    // Open the file for appending
+    $file = fopen($filePath, 'a');
 
     if ($file) {
-        
+        // Write the data to the file
         fwrite($file, $data);
 
-        
+        // Close the file
         fclose($file);
 
         echo 'Data saved successfully.';
@@ -27,4 +29,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo 'Invalid request.';
 }
 ?>
-
