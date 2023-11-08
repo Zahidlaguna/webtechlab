@@ -1,12 +1,11 @@
 <?php
-$cookie_name = "cs4413";
-$cookie_value = "Lab12";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
-
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
+if (isset($_COOKIE['cs4413'])) {
+    echo "The 'cs4413' cookie is already set with the value: " . $_COOKIE['cs4413'];
 } else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
+    $cookieValue = "hello there";
+    $expirationTime = time() + 3600;
+    setcookie('cs4413', $cookieValue, $expirationTime, '/');
+
+    echo "The 'cs4413' cookie has been set with the value: " . $cookieValue;
 }
 ?>
